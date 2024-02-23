@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: rgb(10, 25, 47);
+  color: rgb(136, 146, 176);
+  font-family: "Source Sans Pro", sans-serif;
+  height: 2000px;
+}
+
+.green {
+  color: rgb(100, 255, 218);
+}
+
+.bgc {
+  background-color: rgb(10, 25, 47);
+}
+
+.nav {
+  position: sticky;
+  top: 0px;
+  backdrop-filter: blur(9px);
+  /* border: 2px solid white; */
+  height: 1px;
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.nav-left {
+  margin-right: auto;
+}
+
+.nav-right > ul > li,
+.nav-right > ul > li > p {
+  display: inline;
+  margin: 10px;
+}
+
+.nav-right > ul > li:hover {
+  cursor: pointer;
+  color: rgb(100, 255, 218);
+  /* text-decoration: underline; */
+}
+
+.nav-btn {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(100, 255, 218);
+  border: 1px solid rgb(100, 255, 218);
+  padding: 11px 16px;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.left-sidebar {
+  display: flex;
+  flex-flow: column;
+
+  justify-content: end;
+  padding: 10px;
+  align-items: center;
+  /* border: 2px solid white; */
+  /* height: 100%; Full-height: remove this if you want "auto" height */
+  width: 100px; /* Set the width of the sidebar */
+  height: 100%;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  top: 2; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.left-sidebar > * {
+  margin: 10px;
+  /* border: 2px solid wheat; */
+}
+
+hr {
+  margin-top: 30px;
+  height: 210px;
+}
+
+.right-sidebar {
+  display: flex;
+  /* flex-flow: column; */
+  justify-content: end;
+  /* padding: 10px; */
+  align-items: center;
+  size: 22px;
+
+  /* border: 2px solid white; */
+  writing-mode: vertical-rl;
+  /* height: 100%; Full-height: remove this if you want "auto" height */
+  width: 120px; /* Set the width of the sidebar */
+  height: 100%;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  top: 2; /* Stay at the top */
+  right: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.main-body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* padding: 0px 130px; */
+}
+
+.main-main {
+  /* border: 2px solid green; */
+  height: 100%;
+}
+
+.intro {
+  padding: 40px 0;
+}
+
+.name {
+  font-size: 83px;
+  font-weight: bold;
+  color: white;
+}
+
+.intro > * {
+  margin-bottom: 22px;
+}
+
+.intro > h1 {
+  font-size: 66px;
+}
+
+.intro > h3 {
+  max-width: 600px;
+}
+
+.intro-btn {
+  margin-top: 30px;
+  font-size: 16px;
+  height: 55px;
+  width: 230px;
+}
+
+.hover:hover {
+  color: rgb(100, 255, 218);
+  cursor: pointer;
+}
+
+.bg-hover:hover {
+  background-color: rgba(100, 255, 218, 20%);
+}
+
+.about {
+  /* border: 2px solid white; */
+  height: 600px;
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+.image-div {
+  /* border: 2px solid white; */
+  height: 200px;
+  width: 200px;
+  float: right;
+}
